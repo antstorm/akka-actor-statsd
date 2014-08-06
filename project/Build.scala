@@ -12,7 +12,7 @@ object Build extends sbt.Build {
       version               := "0.3-SNAPSHOT",
       licenses              := Seq("MIT" -> url("http://opensource.org/licenses/MIT")),
       homepage              := Some(url("https://github.com/cfeduke/akka-actor-statsd/")),
-      scalaVersion          := "2.10.3",
+      scalaVersion          := "2.11.1",
       scalacOptions         := Seq("-deprecation", "-feature", "-encoding", "utf8"),
       libraryDependencies   ++= Dependencies(),
       publishMavenStyle     := true,
@@ -42,10 +42,10 @@ object Build extends sbt.Build {
   object Dependencies {
 
     object Versions {
-      val akka              = "2.2.3"
-      val scalatest         = "2.0"
+      val akka              = "2.3.3"
+      val scalatest         = "2.2.1"
       val logback           = "1.0.13"
-      val ficus             = "1.0.0"
+      val ficus             = "1.1.1"
     }
 
     val compileDependencies = Seq(
